@@ -1,0 +1,409 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     tools:context=".MainActivity">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       >
+
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#303030">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/layout">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#607d8b"
+            android:minHeight="?attr/actionBarSize"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:id="@+id/lroot"
+            android:layout_below="@id/toolbar"
+            android:orientation="horizontal"
+            android:background="#37474f">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CRATIVITY"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:layout_weight="1"
+                android:layout_marginLeft="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="INNOVATION"
+                android:id="@+id/rootstatus"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:textStyle="italic"
+                android:layout_marginRight="30dp"
+                />
+            </LinearLayout>
+
+
+        <ImageView
+        android:layout_width="300dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="22dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/limhead"
+        android:layout_below="@id/lroot"
+        android:id="@+id/button"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill_horizontal"
+                android:gravity="center"
+                android:id="@+id/layout2"
+                android:layout_below="@id/button"
+                android:layout_marginTop="40dp"
+                android:orientation="horizontal" >
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/shortcut"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:minHeight="64dp"
+                android:clickable="true"
+                android:orientation="vertical"
+                android:layout_below="@id/layout2"
+                android:layout_marginTop="35dp"
+                android:gravity="center_vertical"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A most successful future"
+                    android:paddingBottom="2dp"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="Ensure a most successful future through Malaysia’s University of Innovation Go beyond degree studies to identify and unlock your hidden talent and you are guaranteed a successful future. Match your talent to your career choice and you will enjoy challenges that help you leap ahead of others."
+                    style="@style/TextAppearance.AppCompat.Caption"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+    android:id="@+id/about"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground"
+    android:minHeight="64dp"
+    android:clickable="true"
+    android:orientation="vertical"
+    android:layout_below="@id/shortcut"
+    android:layout_marginTop="35dp"
+    android:gravity="center_vertical"
+    android:padding="8dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="High technology sophistication"
+        android:paddingBottom="2dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="Achieve high technology sophistication through a professional award winning digital business unit on campus Final year students are provided access to use special high-end technology located within the Digital Innovation Centre which is one of several professional units on campus that provide industry exposure unmatched by other institutions of higher education in the world."
+        style="@style/TextAppearance.AppCompat.Caption"
+        android:textColor="#ffffff"
+        android:textSize="14sp"/>
+</LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/m1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:minHeight="64dp"
+                android:clickable="true"
+                android:orientation="vertical"
+                android:layout_below="@id/about"
+                android:layout_marginTop="35dp"
+                android:gravity="center_vertical"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Applied creativity and innovation"
+                    android:paddingBottom="2dp"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="Integrated approach enables holistic learning unmatched by other universities Much of the learning that takes place on campus are outside the classroom where students participate in events, projects and competitions. These provide the extra edge they need to boost their confidence as they apply what they learn in the classroom to real challenges."
+                    style="@style/TextAppearance.AppCompat.Caption"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/m2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:minHeight="64dp"
+                android:clickable="true"
+                android:orientation="vertical"
+                android:layout_below="@id/m1"
+                android:layout_marginTop="35dp"
+                android:gravity="center_vertical"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Industry knowledge and skill-sets"
+                    android:paddingBottom="2dp"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="Strong industry partnerships with top brands of the world expose students to real world expectations and opportunities to interact effectively with future employers. This ensures a smoother transition into high-income careers. "
+                    style="@style/TextAppearance.AppCompat.Caption"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/m3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:minHeight="64dp"
+                android:clickable="true"
+                android:orientation="vertical"
+                android:layout_below="@id/m2"
+                android:layout_marginTop="35dp"
+                android:gravity="center_vertical"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Friends from across the world"
+                    android:paddingBottom="2dp"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="30,000 students from 165 countries help you build a global network of friends In today’s globalised workplace, having a network of friends from across the world is a great advantage. It will enable you to obtain market intelligence at a scale that cannot be matched by others who have not studied at Limkokwing University."
+                    style="@style/TextAppearance.AppCompat.Caption"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/m4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:minHeight="64dp"
+                android:clickable="true"
+                android:orientation="vertical"
+                android:layout_below="@id/m3"
+                android:layout_marginTop="35dp"
+                android:gravity="center_vertical"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Multicultural creativity"
+                    android:paddingBottom="2dp"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="Get inspired to become a world-culture savvy, multi-skilled, talented and confident global graduate In Limkokwing University’s globalized environment where the world’s cultures intermingle in unique ways creativity is stimulated to come up with hundreds of ideas. And that is how you become innovative. You have to start by being creative before you can be innovative."
+                    style="@style/TextAppearance.AppCompat.Caption"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/m5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:minHeight="64dp"
+                android:clickable="true"
+                android:orientation="vertical"
+                android:layout_below="@id/m4"
+                android:layout_marginTop="35dp"
+                android:gravity="center_vertical"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Globalised education"
+                    android:paddingBottom="2dp"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="Limkokwing University is present in ten countries ― Malaysia, Botswana, Cambodia, China, Indonesia, Lesotho, Sierra Leone, Swaziland, Yemen, and the United Kingdom. All students are encouraged to spend time overseas to understand the challenges they will face when they start work."
+                    style="@style/TextAppearance.AppCompat.Caption"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/m6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:minHeight="64dp"
+                android:clickable="true"
+                android:orientation="vertical"
+                android:layout_below="@id/m5"
+                android:layout_marginTop="35dp"
+                android:gravity="center_vertical"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Most inspiring ecosystem"
+                    android:paddingBottom="2dp"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="Most creative environment with professional units for music, fashion, design, web and broadcasting In today’s highly competitive world, students need to understand the multi-disciplinary nature of business. Simply graduating with degrees, isolated from knowledge of how other disciplines will influence their careers, will limit the ability of fresh graduates to excel and progress in their workplace."
+                    style="@style/TextAppearance.AppCompat.Caption"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/m7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:minHeight="64dp"
+                android:clickable="true"
+                android:orientation="vertical"
+                android:layout_below="@id/m6"
+                android:layout_marginTop="35dp"
+                android:gravity="center_vertical"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Scholarship programme"
+                    android:paddingBottom="2dp"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="Limkokwing University scholarships are awarded to deserving individuals who display a wide range of talent. Apart from individuals who have demonstrated exceptional academic excellence, the university also recognizes and endeavours to nurture students with leadership qualities, achievements in sports, and creative approaches to innovation."
+                    style="@style/TextAppearance.AppCompat.Caption"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp"/>
+            </LinearLayout>
+
+
+        </RelativeLayout>
+        </ScrollView>
+
+        <com.naman14.limkok.CircularRevealView
+            android:id="@+id/reveal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"/>
+    </FrameLayout>
+</LinearLayout>

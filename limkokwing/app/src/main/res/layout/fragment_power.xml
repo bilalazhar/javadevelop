@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+  <FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_gravity="center"
+    android:layout_height="wrap_content"
+
+    >
+
+    <com.naman14.limkok.CircularRevealView
+        android:id="@+id/reveal"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_gravity="center"
+       />
+
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/frame">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layoutAnimation="@anim/layout_controller_push_up_in"
+        android:id="@+id/power"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/logomogo"
+            android:layout_margin="15dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:text="The CEO"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center_vertical" />
+
+
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+
+        android:id="@+id/reboot"
+        android:layoutAnimation="@anim/layout_controller_push_up_in"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/logomogo"
+            android:layout_margin="15dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:textColor="#000000"
+            android:text="The creative maestro"
+            android:textSize="18sp"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center_vertical" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/soft_reboot"
+        android:layoutAnimation="@anim/layout_controller_push_up_in"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/logomogo"
+            android:layout_margin="15dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:text="21st century entrepreneur"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="center_vertical" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-9dp"
+                android:layoutAnimation="@anim/layout_controller_push_up_in">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text=""
+                    android:layout_marginLeft="20dp"
+                    android:textColor="#000000"
+                    android:textSize="9sp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="#363636"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layoutAnimation="@anim/layout_controller_fade_in"
+        android:layout_gravity="fill_horizontal"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_gravity="left"
+            android:paddingTop="15dp"
+            android:id="@+id/recovery">
+            <ImageView
+                android:id="@+id/irecovery"
+                android:layout_width="50dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_height="50dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/logomogo"
+
+                />
+            <TextView
+
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Brand strategist"
+                android:textColor="#000000"
+                android:textSize="10sp"
+                />
+            </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:paddingTop="15dp"
+            android:id="@+id/bootloader">
+            <ImageView
+                android:id="@+id/ibootloader"
+                android:layout_width="50dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_height="50dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/logomogo"
+
+                />
+            <TextView
+
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="The industry icon"
+                android:textColor="#000000"
+                android:textSize="10sp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_gravity="right"
+            android:paddingTop="15dp"
+            android:id="@+id/safemode">
+            <ImageView
+                android:id="@+id/isafe"
+                android:layout_width="50dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:layout_height="50dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/logomogo"
+
+                />
+            <TextView
+
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="The innovator"
+                android:textColor="#000000"
+                android:textSize="10sp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    </LinearLayout>
+
+
+</FrameLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/frame2"
+        android:layout_gravity="center"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="150dp"
+            android:layout_gravity="top|center"
+            android:layout_marginTop="5dp"
+
+            android:src="@drawable/tanseri"
+
+            android:id="@+id/button"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center|bottom"
+            android:layout_marginBottom="25dp"
+            android:gravity="center">
+
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The CEO"
+                android:id="@+id/status"
+                android:layout_marginLeft="10dp"
+                android:textColor="#ffffff"
+                android:textSize="20sp"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layoutAnimation="@anim/layout_controller_push_up_in">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Shutting Down..."
+                    android:id="@+id/status_detail"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#ffffff"
+                    android:textSize="10sp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            </LinearLayout>
+        </FrameLayout>
+
+</FrameLayout>
+
